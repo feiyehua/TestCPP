@@ -12,13 +12,12 @@
     ********************************************************************************/
     
 
-import SwiftUI
-
-@main
-struct TestCPPApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+import Foundation
+class SayHello{
+    func sayHelloSwift(to:String) -> String{
+        //let cString = to
+        let result=String(cString: sayHello(to.cString(using: .utf8)))
+        Hello();
+        return result;
     }
 }

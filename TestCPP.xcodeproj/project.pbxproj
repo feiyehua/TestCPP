@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C8AF738C2BA60B0200F5E4C5 /* Hello.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AF738B2BA60B0200F5E4C5 /* Hello.swift */; };
+		C8AF738F2BA60CF600F5E4C5 /* hello.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C8AF738E2BA60CF600F5E4C5 /* hello.cpp */; };
 		C8B43DDC2BA5D8730090BE00 /* TestCPPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B43DDB2BA5D8730090BE00 /* TestCPPApp.swift */; };
 		C8B43DDE2BA5D8730090BE00 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B43DDD2BA5D8730090BE00 /* ContentView.swift */; };
 		C8B43DE02BA5D8750090BE00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8B43DDF2BA5D8750090BE00 /* Assets.xcassets */; };
@@ -14,6 +16,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C8AF738B2BA60B0200F5E4C5 /* Hello.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hello.swift; sourceTree = "<group>"; };
+		C8AF738D2BA60CF600F5E4C5 /* TestCPP-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestCPP-Bridging-Header.h"; sourceTree = "<group>"; };
+		C8AF738E2BA60CF600F5E4C5 /* hello.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = hello.cpp; sourceTree = "<group>"; };
+		C8AF73902BA60DFC00F5E4C5 /* hello.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = hello.hpp; sourceTree = "<group>"; };
 		C8B43DD82BA5D8730090BE00 /* TestCPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8B43DDB2BA5D8730090BE00 /* TestCPPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCPPApp.swift; sourceTree = "<group>"; };
 		C8B43DDD2BA5D8730090BE00 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,9 +58,13 @@
 			isa = PBXGroup;
 			children = (
 				C8B43DDB2BA5D8730090BE00 /* TestCPPApp.swift */,
+				C8AF738E2BA60CF600F5E4C5 /* hello.cpp */,
+				C8AF738B2BA60B0200F5E4C5 /* Hello.swift */,
+				C8AF73902BA60DFC00F5E4C5 /* hello.hpp */,
 				C8B43DDD2BA5D8730090BE00 /* ContentView.swift */,
 				C8B43DDF2BA5D8750090BE00 /* Assets.xcassets */,
 				C8B43DE12BA5D8750090BE00 /* Preview Content */,
+				C8AF738D2BA60CF600F5E4C5 /* TestCPP-Bridging-Header.h */,
 			);
 			path = TestCPP;
 			sourceTree = "<group>";
@@ -99,6 +109,7 @@
 				TargetAttributes = {
 					C8B43DD72BA5D8730090BE00 = {
 						CreatedOnToolsVersion = 15.3;
+						LastSwiftMigration = 1530;
 					};
 				};
 			};
@@ -138,6 +149,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8B43DDE2BA5D8730090BE00 /* ContentView.swift in Sources */,
+				C8AF738C2BA60B0200F5E4C5 /* Hello.swift in Sources */,
+				C8AF738F2BA60CF600F5E4C5 /* hello.cpp in Sources */,
 				C8B43DDC2BA5D8730090BE00 /* TestCPPApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +282,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TestCPP/Preview Content\"";
@@ -280,6 +294,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -288,6 +303,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = feiyehua.TestCPP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "TestCPP/TestCPP-Bridging-Header.h";
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,6 +316,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TestCPP/Preview Content\"";
@@ -309,6 +328,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,6 +337,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = feiyehua.TestCPP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "TestCPP/TestCPP-Bridging-Header.h";
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
