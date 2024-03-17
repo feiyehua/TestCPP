@@ -18,6 +18,7 @@ char* sayHello(const char *inputString)
 }
 string sayHelloInCPPString(string inputString)
 {
+    if(inputString=="") return "";
     return "Hello, " + inputString + "From Cpp String";
 }
 void Hello()
