@@ -16,9 +16,13 @@ char* sayHello(const char *inputString)
     strcat(str, inputString);
     return str;
 }
+string sayHelloInCPPString(string inputString)
+{
+    return "Hello, " + inputString + "From Cpp String";
+}
 void Hello()
 {
-    //freopen(stdout,"w","OutPut.txt");
-    cout<<"hello,world!"<<endl;
+    //freopen("w","OutPut.txt",stdout);
+    //cout<<"hello,world!"<<endl;
     return ;
 }

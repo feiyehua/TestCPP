@@ -10,6 +10,8 @@
 #include <iostream>
 #include <string>
 #include <cstdio>
+#include <stdio.h>
 using namespace std;
+string sayHelloInCPPString(string inputString);
 char *sayHello(const char *inputString);
 void Hello();

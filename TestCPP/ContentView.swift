@@ -26,6 +26,7 @@ struct ContentView: View {
             //Text("Hello, world!")
             TextField("Type your greetings", text: $greetings)
             Text(Hello.sayHelloSwift(to: greetings))
+            Text(Hello.sayHelloCPP(to: greetings))
         }
         .padding()
     }
